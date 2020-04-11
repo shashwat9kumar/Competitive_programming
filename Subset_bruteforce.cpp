@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 /*
 
 Question:
@@ -23,32 +26,29 @@ Also assuming that array has more than 6 elements
 
 
 
-#include <bits/stdc++.h>
-using namespace std;
-
 
 int main()
 {
-	int n1,n2,n3,n4,n5,n6;
 	
-	int arr[] ={1,2,3,4,5,6,7};
 	
-	int n = 7;
+	int arr[] ={1,2,3,4,5,6,7,8,9};
 	
-	for(n1 =0 ; n1 <n-5; n1++)
+	int n = 9, count =0;
+	
+	for(int n1 =0 ; n1 <n-5; n1++)
 	{
-		for(n2 =n1+1 ; n2 <n-4; n2++)
+		for(int n2 =n1+1 ; n2 <n-4; n2++)
 		{
-			for(n3 =n2+1 ; n1 <n-3; n3++)
+			for(int n3 =n2+1 ; n3 <n-3; n3++)
 			{
-				for(n4 =n3+1 ; n4 <n-2; n4++)
+				for(int n4 =n3+1 ; n4 <n-2; n4++)
 				{
-					for(n5 =n4+1 ; n5 <n-1; n5++)
+					for(int n5 =n4+1 ; n5 <n-1; n5++)
 					{
-						for(n6 =n5+1 ; n6 <n; n6++)
+						for(int n6 =n5+1 ; n6 <n; n6++)
 						{
 							cout<<arr[n1]<<" "<<arr[n2]<<" "<<arr[n3]<<" "<<arr[n4]<<" "<<arr[n5]<<" "<<arr[n6]<<endl;
-							//count++;
+							count++;
 						}
 						
 					}
@@ -58,6 +58,6 @@ int main()
 	}
 	
 	
-	//cout<<"\n\nThe total subsets are : "<<count<<endl;
+	cout<<"\n\nThe total subsets are : "<<count<<endl;
 	return 0;
 }
