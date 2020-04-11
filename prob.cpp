@@ -36,6 +36,7 @@ In general if the probability was given to be x% the the condition would be (1 -
 
 
 
+
 #include <bits/stdc++.h>
 using namespace std;
 
