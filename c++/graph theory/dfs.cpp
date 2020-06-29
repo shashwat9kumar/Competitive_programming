@@ -61,5 +61,5 @@ int main()
 	cout<<endl;
 	cout<<endl;cout<<endl;cout<<endl;cout<<endl;cout<<endl;
 	
-	dfs(0, arr, adlist);
+	dfs(2, arr, adlist);
 }
